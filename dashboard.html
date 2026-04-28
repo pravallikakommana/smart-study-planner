@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Study Planner 🚀</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Smart Study Planner 🚀</h2>
+
+<button onclick="logout()">Logout</button>
+
+<hr>
+
+<!-- SUBJECTS SECTION -->
+<div id="subjects">
+
+<div>
+    Subject: <input class="subject">
+
+    <select class="difficulty">
+        <option value="easy">easy</option>
+        <option value="medium">medium</option>
+        <option value="hard">hard</option>
+    </select>
+
+    <input type="date" class="exam">
+</div>
+
+</div>
+
+<br>
+
+<button onclick="addSubject()">➕ Add Subject</button>
+
+<hr>
+
+<!-- INPUT SETTINGS -->
+Study Hours:
+<input id="hours" type="number" placeholder="Enter hours">
+
+<br><br>
+
+Mode:
+<select id="mode">
+    <option value="daily">Daily</option>
+    <option value="exam">Exam</option>
+</select>
+
+<br><br>
+
+Slots:
+<input id="slots" placeholder="4-6AM,6-7PM,8-9PM">
+
+<br><br>
+
+<!-- ACTION BUTTONS -->
+<button onclick="generate()">🔥 Generate Plan</button>
+<button onclick="savePlan()">💾 Save Plan</button>
+<button onclick="loadHistory()">📜 History</button>
+
+<hr>
+
+<!-- PENDING -->
+<h3 style="color:red;">🔴 Pending Tasks</h3>
+<div id="pending"></div>
+
+<hr>
+
+<!-- PLAN OUTPUT -->
+<h2>📅 Plan</h2>
+<div id="result"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
