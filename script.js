@@ -18,6 +18,18 @@ if(!email){
 alert("Enter email");
 return;
 }
+function register(){
+let email=document.querySelector("input").value;
+
+if(!email){
+alert("Enter email");
+return;
+}
+
+localStorage.setItem("user",email);
+alert("Registered Successfully");
+window.location="login.html";
+}
 
 localStorage.setItem("user",email);
 window.location="dashboard.html";
